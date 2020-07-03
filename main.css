@@ -1,0 +1,277 @@
+/**###########defaults###########**/
+*{
+box-sizing: border-box;
+    font-weight: 600;
+}
+nav,
+header,
+footer{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin:0 ;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+article p{
+    margin: 10px;
+    font-size: 22px;
+    padding: 22px;
+    line-height: 30px;
+}
+a{
+    text-decoration: none;
+}
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+label  {
+    font-size: 29px;
+    font-weight: 900;
+    
+}   
+
+/*################nav bar###############*/
+nav{
+    width: 100%;
+    margin:0 ;
+        
+}
+nav ul{ 
+    background-color:#eee;
+    overflow: hidden;
+    margin:0 ;
+    padding: 0;
+        
+}
+ ul.topnav li{
+    list-style: none;
+    float: left;
+}
+ ul.topnav li.topright{
+    float: right;
+}
+ul.topnav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: darkgray
+}
+ul.topnav li a:hover{
+    background-color:cornflowerblue;
+    color:aliceblue;
+    border-radius: 15px;
+    transition: 2s; 
+}
+ul.topnav li.dropdownIcon{
+    display: none
+}
+/*###############header#################3*/
+#section-1-grid{
+     background-image: linear-gradient( #86a7e2, #6495ed);
+}
+div .leftside{
+    margin-left:15%;
+}
+div .rightside{
+    margin-left:10%;
+}
+h1.large{
+    color: #fff;
+    font-size: 56px;
+    line-height: 70px;
+    margin: 0;
+}
+h1.section2Header{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+ 
+from h2{
+    color: #fff;
+    
+}
+
+input.inputBox{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    border-radius: 15px;
+    border: 0;
+}
+input.inputBox:visited{
+   
+         border-radius: 15px;
+    border: 0;
+}
+div.box{
+  background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+   text-align: center;
+    margin: 20px 30px;
+    padding: 20px 30px;
+    border-radius: 7px;
+}
+div.box:hover{
+    background-color:cornflowerblue;
+    color:aliceblue;
+    border-radius: 15px;
+    transition: 2s; 
+    width+=10px;
+    height+=10px;
+}
+.para{
+   
+    font-size: 20px
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    color: #Fff;
+    background-color: cornflowerblue;
+    font-size: 22px;
+    text-align: center;
+    
+    
+}
+button.learnMore{
+  margin: auto;
+  display: block;
+}
+div.img-Saeeir  {
+    margin-left: 150px;
+    
+}
+footer.end{
+    background-color: #666;
+    padding-left: 10%;
+    
+}
+footer.end h1 {
+    color: #fff;
+    font-size: 30px;
+
+}
+footer.end ul{
+        color: #fff;
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+}
+footer.end ul il{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.2;
+}
+footer.end ul a{
+    color: #fff;
+}
+footer.end ul a:hover{
+    color:cadetblue;
+}
+/*################mobile###########################*/
+@media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none
+    }
+   ul.topnav li.dropdownIcon{
+    display: block;
+       float: right;
+}
+    ul.topnav.respon{
+      position: ;
+        transition: 1s;
+    }
+    ul.topnav.respon li{
+        display:inline;
+        float: none;  
+        
+    }
+    ul.topnav.respon li a{
+        text-align: left;
+        display: block;
+       
+    }
+    ul.topnav.respon li.dropdownIcon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    h1.large{
+        color: #fff;
+        font-size: 40px;
+        line-height: 45px;
+        margin: 0;}
+    .col-6,.col-4,.col-5, .col-7
+   {
+        width: 100%;
+        margin: 0;
+    }
+    .col-3{
+        width: 50%
+    }
+    div.leftside,
+     div.rightside
+    {
+        margin: 15px;
+    }
+    article p{
+    margin:0;
+    font-size: 18px;
+    padding:10px;
+    line-height: 30px;
+        border-color:  cornflowerblue;
+        border-radius: 7px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+        margin: 15px;
+        
+}
+   .imgSaeeir img ,.img-Saeeir img{
+        overflow: hidden;
+    width: 100%;
+}
+    div.img-Saeeir img{
+        overflow: hidden;
+    width: 100%;
+       border-color:  cornflowerblue;
+        border-radius: 7px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+       
+}
+    div.img-Saeeir{
+         margin: 15px;
+    }
+/*##################################*/
+    
+    
